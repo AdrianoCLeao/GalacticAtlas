@@ -409,7 +409,8 @@ progress {
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.2;
+  padding-top: 5vw; }
   @media (min-width: 1200px) {
     .display-1 {
       font-size: 5rem; } }
@@ -2942,7 +2943,7 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  padding: var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
@@ -2952,7 +2953,7 @@ textarea.form-control-lg {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: var(--bs-nav-link-hover-color); }
+    color: var(--bs-nav-link-hover-color);}
   .nav-link.disabled {
     color: var(--bs-nav-link-disabled-color);
     pointer-events: none;
@@ -2975,7 +2976,7 @@ textarea.form-control-lg {
     border-top-right-radius: var(--bs-nav-tabs-border-radius); }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
       isolation: isolate;
-      border-color: var(--bs-nav-tabs-link-hover-border-color); }
+      border-color: var(--bs-nav-tabs-link-hover-border-color);  }
     .nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
       color: var(--bs-nav-link-disabled-color);
       background-color: transparent;
@@ -8992,12 +8993,12 @@ img {
   background-position: center center; }
 
 .navbar {
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 .navbar.scrolled {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #111; }
 
 .display-big {
@@ -9064,7 +9065,7 @@ img {
   padding-right: 0rem; }
 
 .navbar-dark a.nav-link:hover {
-  border-bottom: 2px solid #fff; }
+  border-bottom: 1px solid #fff; }
 
 .gradient {
   background-image: linear-gradient(24deg, #1717e5, transparent 21%), linear-gradient(198deg, rgba(255, 193, 7, 0.2) 11%, transparent 0%), linear-gradient(50deg, #6610f2 5%, #6f42c1 32%, #d63384 35%, #dc3545 65%, #fd7e14 83%, #ffc107 91%); }
@@ -9253,7 +9254,7 @@ img {
   padding-bottom: 6vh; }
 
 .py-vh-4 {
-  padding-top: 9vh;
+  padding-top: 0vh;
   padding-bottom: 9vh; }
 
 .py-vh-5 {

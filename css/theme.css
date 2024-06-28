@@ -3374,14 +3374,22 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 600px;
+}
+
+@media (max-width:1400px){
+  .canvas3d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
 }
 
 model-viewer{
   height: 90%;
   width: 90%;
 }
-
 
 .card {
   --bs-card-spacer-y: 1rem;

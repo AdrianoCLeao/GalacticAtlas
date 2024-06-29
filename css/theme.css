@@ -90,7 +90,10 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(17, 17, 17, 0); }
+  -webkit-tap-highlight-color: rgba(17, 17, 17, 0); 
+  max-width: 100%;
+  overflow-x: hidden;}
+
 
 hr {
   margin: 1rem 0;
@@ -3370,6 +3373,16 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
+  .space-cards{
+    display: flex;
+  }
+
+  @media(max-width:1000px){
+    .space-cards{
+       display: none;
+    }
+  }
+  
   #preloader {
     position: fixed;
     display: flex;

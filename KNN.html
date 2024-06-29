@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Galactic Atlas - K-Nearest Neighbors</title>
+  <link rel="stylesheet" href="css/theme.css">
+
+  <style>
+    /* inter-300 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* inter-400 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-regular.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+
+</head>
+
+<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
+    <div class="container">
+
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="about.html" aria-label="A sample content page">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="data.html" aria-label="A system message page">
+            Data
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="https://adrianoleao.com" aria-label="A system message page" target="_blank">
+            Creator
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5"
+            href="https://medium.com/@adrianoleao/exploring-ai-models-for-exoplanet-detection-a-comparative-study-6e0d779cee7e"
+            aria-label="A system message page" target="_blank">
+            Article
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row d-flex justify-content-center py-vh-5 pb-0">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-1 fw-bold">K-Nearest
+                Neighbors
+              </h1>
+              <p class="lead border-top pt-5 mt-5" data-aos="fade-up">The K-Nearest Neighbors (KNN) algorithm classifies
+                new data based on similarity to previously labeled data.
+                It calculates the distance between a new data point and all training points, selecting the K nearest
+                neighbors.
+                Classification is done by majority vote (for classification) or averaging (for regression).
+                Choosing the optimal K value is crucial for performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 py-vh-2">
+            <img src="./assets/images/k-nearest-neighbors.png" width="1446" height="982" alt="abstract image"
+              class="img-fluid position-relative rounded-5 shadow" data-aos="zoom-up">
+            <a href="https://serokell.io/blog/knn-algorithm-in-ml" class="link-fancy-light"
+              style="display: flex; justify-content: center; text-decoration: none;">
+              <h1><span class="fs-5">Logunova, I (2022)</span></h1>
+            </a>
+          </div>
+        </div>
+        <div class="row d-flex align-items-start" data-aos="fade-right">
+          <div class="col-12 col-lg-7">
+            <h2 class="h3 mt-5 border-top pt-5">Many advantages</h2>
+            <p class="text-secondary">One of the key advantages of KNN is its non-parametric nature, which means it does
+              not assume any underlying distribution for the data. This versatility allows it to perform effectively in
+              real-world scenarios where data distributions are often unknown or complex. KNN also accommodates various
+              distance metrics, such as Euclidean, Manhattan, or Minkowski distances, enabling customization based on
+              specific problem requirements or dataset traits. Furthermore, KNN is robust to noise, particularly when
+              the value of
+              <strong>𝑘</strong>
+              k is chosen appropriately. The algorithm's reliance on majority voting among neighbors helps mitigate the
+              impact of outliers or noisy data points.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 offset-lg-1 bg-gray-900 p-5 mt-5 rounded-4">
+            <h3 class="h6">Limitations</h3>
+            <p class="text-secondary">
+              Selecting an optimal
+              𝑘
+              k value is crucial but can be challenging, impacting the algorithm's performance significantly. KNN is
+              sensitive to irrelevant features and struggles with high-dimensional data, where distances may lose
+              meaning.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="row d-flex align-items-start justify-content-center py-vh-3 text-muted" data-aos="fade">
+      <div class="col-12 col-lg-10 col-xl-9">
+        <div class="p-5 small bg-gray-900">
+          <p>"KNN is like a digital Sherlock Holmes, solving mysteries based on the company it keeps."</p>
+          <p>Peter Harrington, from his book "Machine Learning in Action."</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-black border-top border-dark">
+    <div class="container py-vh-4 text-secondary fw-lighter" style="padding-top: 6vh;">
+      <div class="row">
+        <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
+        </div>
+        <div class="col border-end border-dark">
+          <span class="h6">Services</span>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#pricing" class="link-fancy link-fancy-light">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adrianoleao.com/services.html" class="link-fancy link-fancy-light">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://adrianoleao.com/index.html" class="link-fancy link-fancy-light">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adrianoleao.com" class="link-fancy link-fancy-light">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://medium.com/@adrianoleao" class="link-fancy link-fancy-light">Articles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="h6">The Developer</span>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="https://adrianoleao.com/about.html" class="link-fancy link-fancy-light">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adrianoleao.com/services.html" class="link-fancy link-fancy-light">Career</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adrianoleao.com/contact.html" class="link-fancy link-fancy-light">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+  <script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll(); }
+      else { remove_class_on_scroll(); }
+
+      console.log(scrollpos);
+    })
+  </script>
+
+</body>
+
+</html>

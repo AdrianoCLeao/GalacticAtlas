@@ -3603,6 +3603,18 @@ model-viewer{
   width: 90%;
 }
 
+.carl{
+  display: flex;
+  flex-direction: row;
+}
+
+@media(max-width:768px){
+  .carl{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
